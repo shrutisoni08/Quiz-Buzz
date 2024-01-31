@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: #1E1A5F;
+}
+.questionBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentBox{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #4E4C81;
+    width: 50%;
+}
+.contentBox>.title{
+    color: #fff;
+    margin-top: 1.5rem;
+    text-decoration: uppercase;
+    letter-spacing: .2rem;
+}
+.score_and_time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+.display_question{
+    border: 2px solid lightgray;
+    padding: .75rem;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.option>.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: justify;
+}
+.option>.buttons>button{
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.3rem;
+}
+button{
+    cursor: pointer;
+}
+#nextBtn{
+    width: 13rem;
+    height: 3rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+
+/* Media Query for 1024px width */
+@media only screen and (max-width: 1025px) {
+    .contentBox{
+        width: 80%;
+    }
+    .options{
+        margin-top: 2rem;
+    }
+    .option .buttons>button{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Media Query for 425px width */
+@media only screen and (max-width: 426px) {
+    .contentBox{
+        width: 90%;
+    }
+    .contentBox>h1{
+        margin-bottom: .5rem;
+    }
+    .score_and_time>h2{
+        font-size: 1.3rem;
+    }
+
+    #printQuestion{
+        font-size: 1.3rem;
+    }
+    .option> .buttons>button{
+        width: 8rem;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+}
+
+/* Media Query for 320px width */
+@media only screen and (max-width: 321px) {
+    .option> .buttons>button{
+        width: 6rem;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .option>.buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0;
+    }
+}

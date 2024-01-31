@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizBuzz</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="main_container">
+        <h1>YAYY! You've Completed The QUIZ.</h1>
+        <h2 id="username">Name</h2>
+        <h3>Total Score : <span id="total_score">0 / 5</span> </h3>
+        <h3>Right Answer : <span id="right_answer">0 / 5</span></h3>
+        <h3>Wrong Answe : <span id="wrong_answer">0 / 5</span></h3>
+        <h3>Total Percent : <span id="total_percent"> 0% </span></h3>
+        <!-- Button to go back -->
+        <div class="btns">
+            <button onclick="goToHomePage()" type="reset">HOME</button>
+            <button onclick="restartTheQuiz()" type="reset">RETAKE</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

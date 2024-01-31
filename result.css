@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: #1E1A5F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    color: #fff;
+    background-color: #4E4C81;
+    width: 60%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+/* .btns > a> button{
+    width: 10rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+} */
+.btns > button{
+    width: 10rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
